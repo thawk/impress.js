@@ -15,6 +15,9 @@ If you do so, this plugin will reveal the substeps in ascending order; any subst
 specified `data-substep-order` will be revealed after all substeps with a specified order have
 been revealed.
 
+If the current step element contains `class="substep-auto-active"` then the **first** substep will
+be auto actived after entering the step.
+
 Calls to `goto()` will be ignored by this plugin, i.e. `goto()` will transition to whichever step is
 the target.
 

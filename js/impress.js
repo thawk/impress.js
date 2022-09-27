@@ -4737,6 +4737,12 @@
         for ( var i = 0; i < visible.length; i++ ) {
             visible[ i ].classList.remove( "substep-visible" );
         }
+
+        if ( step.classList.contains( "substep-auto-active" ) ) {
+
+            // Auto active the first substep
+            showSubstepIfAny( step );
+        }
     }, false );
 
     // API for others to reveal/hide next substep ////////////////////////////////////////////////
